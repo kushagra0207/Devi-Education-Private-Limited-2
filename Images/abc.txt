@@ -1,0 +1,7 @@
+Devi - Education - 2
+
+netlify will handle - frontend
+
+and
+
+vercel will handle - backend
