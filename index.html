@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devi Education Private Limited</title>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css@master/dist/aqua.min.css'>
+    <link rel="icon" type="image/svg+xml" href="Images/123.jpg" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        button {
+            background-color: #3b82f6;
+            color: #fff;
+            border: none;
+            padding: 20px 40px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2563eb;
+            transform: scale(1.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            button {
+                font-size: 1.2rem;
+                padding: 15px 30px;
+            }
+        }
+
+        /* Stars animation */
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .star {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle 2s infinite ease-in-out;
+        }
+
+        .star:nth-child(odd) {
+            animation-duration: 1.5s;
+        }
+
+        @keyframes twinkle {
+            0%, 100% {
+                opacity: 0.2;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        /* Randomly position stars */
+        .star:nth-child(1) { top: 10%; left: 20%; }
+        .star:nth-child(2) { top: 40%; left: 50%; }
+        .star:nth-child(3) { top: 70%; left: 30%; }
+        .star:nth-child(4) { top: 20%; left: 80%; }
+        .star:nth-child(5) { top: 60%; left: 10%; }
+        .star:nth-child(6) { top: 80%; left: 90%; }
+        .star:nth-child(7) { top: 50%; left: 70%; }
+        .star:nth-child(8) { top: 30%; left: 40%; }
+        .star:nth-child(9) { top: 90%; left: 60%; }
+        .star:nth-child(10) { top: 15%; left: 15%; }
+        .star:nth-child(11) { top: 25%; left: 65%; }
+        .star:nth-child(12) { top: 35%; left: 20%; }
+        .star:nth-child(13) { top: 50%; left: 85%; }
+        .star:nth-child(14) { top: 75%; left: 45%; }
+        .star:nth-child(15) { top: 65%; left: 25%; }
+        .star:nth-child(16) { top: 85%; left: 35%; }
+        .star:nth-child(17) { top: 95%; left: 75%; }
+        .star:nth-child(18) { top: 10%; left: 90%; }
+        .star:nth-child(19) { top: 20%; left: 10%; }
+        .star:nth-child(20) { top: 30%; left: 30%; }
+        /* Additional Stars */
+        .star:nth-child(21) { top: 5%; left: 25%; }
+        .star:nth-child(22) { top: 45%; left: 55%; }
+        .star:nth-child(23) { top: 65%; left: 35%; }
+        .star:nth-child(24) { top: 15%; left: 75%; }
+        .star:nth-child(25) { top: 50%; left: 15%; }
+        .star:nth-child(26) { top: 85%; left: 95%; }
+        .star:nth-child(27) { top: 45%; left: 80%; }
+        .star:nth-child(28) { top: 25%; left: 50%; }
+        .star:nth-child(29) { top: 70%; left: 70%; }
+        .star:nth-child(30) { top: 10%; left: 35%; }
+        .star:nth-child(31) { top: 30%; left: 15%; }
+        .star:nth-child(32) { top: 50%; left: 65%; }
+        .star:nth-child(33) { top: 90%; left: 40%; }
+        .star:nth-child(34) { top: 75%; left: 85%; }
+        .star:nth-child(35) { top: 55%; left: 90%; }
+        .star:nth-child(36) { top: 20%; left: 45%; }
+        .star:nth-child(37) { top: 80%; left: 25%; }
+        .star:nth-child(38) { top: 40%; left: 90%; }
+        .star:nth-child(39) { top: 60%; left: 75%; }
+        .star:nth-child(40) { top: 10%; left: 10%; }
+        .star:nth-child(41) { top: 35%; left: 55%; }
+        .star:nth-child(42) { top: 50%; left: 5%; }
+        .star:nth-child(43) { top: 85%; left: 10%; }
+        .star:nth-child(44) { top: 25%; left: 95%; }
+        .star:nth-child(45) { top: 15%; left: 5%; }
+        .star:nth-child(46) { top: 60%; left: 40%; }
+        .star:nth-child(47) { top: 70%; left: 50%; }
+        .star:nth-child(48) { top: 20%; left: 30%; }
+        .star:nth-child(49) { top: 90%; left: 75%; }
+        .star:nth-child(50) { top: 55%; left: 25%; }
+    </style>
+</head>
+<body>
+    <div class="stars">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+    <h1>Devi Education Private Limited</h1>
+    <p>Empowering Education for a Brighter Future</p>
+    <button onclick="window.location.href='https://heartfelt-tulumba-e6a845.netlify.app/'">Click Me !</button>
+</body>
+</html>
